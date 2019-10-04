@@ -1,0 +1,25 @@
+{
+  "name": "wow-discord-bot",
+  "version": "1.0.0",
+  "description": "A World Of Warcraft Bot for Discord",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "World",
+    "Warcraft",
+    "Discord",
+    "Bot"
+  ],
+  "author": "Théo",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "cookie-parser": ">= 0.0.0",
+    "discord.js": "^11.5.1",
+    "express": ">= 0.0.0",
+    "express-session": ">= 0.0.0",
+    "passport": ">= 0.0.0",
+    "passport-bnet": ">= 0.0.0"
+  }
+}
