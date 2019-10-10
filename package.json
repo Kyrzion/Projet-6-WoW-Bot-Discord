@@ -15,11 +15,15 @@
   "author": "Théo",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "blizzard.js": "^3.2.0",
+    "bufferutil": "^4.0.1",
     "cookie-parser": ">= 0.0.0",
     "discord.js": "^11.5.1",
     "express": ">= 0.0.0",
     "express-session": ">= 0.0.0",
     "passport": ">= 0.0.0",
-    "passport-bnet": ">= 0.0.0"
+    "passport-bnet": ">= 0.0.0",
+    "request": "^2.88.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
