@@ -1,47 +1,15 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json"); 
-const bfa = require('./model/wow_bfa.js');
-const classic = require('./model/wow_classic.js');
-//const general = require('./model/wow_general.js');
 const request = require('request');
-const blizzard = require('blizzard.js').initialize({
-    key: config.clientid,
-    secret: config.secretid,
-    origin: 'eu', // optional
-    locale: 'fr_FR', // optional
-    //token: config.clientid // optional
-  });
+const General = require('./model/wow_general.js');
+
+
+
 
 //Préfixe utilisé pour les commandes du bot.
 const prefix = config.prefix;
 
-async function getItem (id) {
-    try {
-      await blizzard.getApplicationToken()
-        .then(response => {
-          blizzard.defaults.token = response.data.access_token
-        });
-      const item = await blizzard.wow.item({ id: id });
-      console.log(item.data.name +'-'+ item.data.description)
-    } catch (err) {
-      console.error(err);
-    }
-  }
-
-  async function getToken () {
-    try {
-      await blizzard.getApplicationToken()
-        .then(response => {
-          blizzard.defaults.token = response.data.access_token
-        });
-      const token = await blizzard.wow.token();
-      return token.data.price
-    } catch (err) {
-      console.error(err);
-    }
-  }
-  getItem(168185);
   
 
 /**
@@ -69,11 +37,15 @@ client.on("message", message => {
     }
 
     if(message.content === prefix + "jeton"){
-      const prix = getToken();
-      message.reply(`Le prix du jeton est de ${prix} PO`)
-      console.log(prix);
+      data = new General({
+        'secret': config.secretid,
+        'client': config.clientid,
+        'need': 'prix',
+      })
+        message.reply(data.response)
+      }
   }
-});
+);
 
 // Message de bienvenue sur le serveur (en MP).
 client.on('guildMemberAdd', member => {
