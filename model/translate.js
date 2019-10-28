@@ -1,15 +1,35 @@
 class Translate{
     constructor(lang){
-        this.data = {
-            "fr_FR" : {
-                "le prix du jetoin est de " : "the token price is ",
-                "kjlkkjlk": "jkhjkhjkh"
-            },
-        };
-        this.data = this.data[lang];
+      this.defineLang(lang);
     }
-    text(str){
-        return this.data[str];
+  
+    defineLang(lang){
+      this.data = require(`path/${lang}.json`);
+    }
+  
+    getTrad(string){
+      return this.data[string];
     }
 }
+  
+  
+  
+  
+  
+ // !lang en
+  
+  
+  
+ // {
+  //  "tokenPrice" : ["le prix du token est :", 30, 70]
+  //}
+  
+  //{
+  //  "tokenPrice" : ["token price is :", 30, 70]
+  //}
+  
+  
+ // let trad = translate.getTrad("tokenPrice")
+  //canvas.fill(trad[0],trad[1],trad[2])
+  
 module.exports = Translate;

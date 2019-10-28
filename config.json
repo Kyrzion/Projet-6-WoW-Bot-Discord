@@ -1,6 +1,7 @@
 {
-    "tokenDiscord" : "NjE3MDg2MDgwMDYzMzczMzEz.XWmBBA.uTrfZZ73LxFFx_9w-CCH_ixV-lY",
-    "prefix" : "!",
-    "clientid" :"f03add1cf693484d8a9f89afe71929ea",
-    "secretid" : "6t22f5mHjPknG5MCaiiai9RX8o5KsOhC"
+    "tokenDiscord": "NjE3MDg2MDgwMDYzMzczMzEz.Xagubg.Rkdm1OJTMBZuoaylNPzDYJK_UGM",
+    "prefix": "!",
+    "clientid": "f03add1cf693484d8a9f89afe71929ea",
+    "secretid": "6t22f5mHjPknG5MCaiiai9RX8o5KsOhC",
+    "lang" : "fr"
 }
