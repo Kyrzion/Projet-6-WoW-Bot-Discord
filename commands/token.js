@@ -1,12 +1,13 @@
 const Discord = require("discord.js");
 const Blizzard = require('blizzard.js');
-const filePath = String.raw`C:\Users\Théo\Desktop\Bot_Discord\config.json`;
-const config = require(filePath);
+const Translate = require('.././translate.js');
+const config = require ('.././config.json');
 const Canvas = require("canvas");
 const snekfetch = require("snekfetch");
 
+
+
 exports.run = async (client, member) => {
-  console.log(client);
   const channel = member.guild.channels.find(ch => ch.name === "general");
   this.blizzard = Blizzard.initialize({
     key: config.clientid,
@@ -20,9 +21,10 @@ exports.run = async (client, member) => {
         this.blizzard.defaults.token = response.data.access_token
       });
     const token = await this.blizzard.wow.token();
+  
     //-----------------
 
-
+    //translate = new Translate();
     const canvas = Canvas.createCanvas(350, 200);
     const ctx = canvas.getContext('2d');
 
@@ -31,8 +33,9 @@ exports.run = async (client, member) => {
 
     ctx.font = "20px Consolas";
     ctx.fillStyle = "#fff";
-    let tradToken = translate("Le jeton coûte acutellement");
-    ctx.fillText("Le jeton coûte acutellement", 30, 70);
+    console.log("tokenPrice");
+    let trad = lang.getTrad("tokenPrice")
+    ctx.fillText(trad[0],trad[1],trad[2]);
 
     ctx.font = "60px Consolas";
     ctx.fillStyle = "#FFFC2E";
@@ -54,4 +57,5 @@ exports.run = async (client, member) => {
   } catch (err) {
     console.error(err);
   }
+
 }

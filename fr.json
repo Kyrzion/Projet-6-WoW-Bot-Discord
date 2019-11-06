@@ -1,0 +1,30 @@
+{
+    "tokenPrice" : ["Le prix du token est de :", 30, 70],
+    "thisWeek" : "Affixes de cette semaine: ",
+    "next" :"Affixes de la semaine prochaine: ",
+    "affix2" : "Fébrile: Les ennemis prêtent beaucoup moins attention à la menace générée par les tanks. ",
+    "affix3" : "Volcanique: En combat, les ennemis font périodiquement apparaître des gerbes de flammes sous les pieds des personnages-joueurs éloignés. ",
+    "affix4" : "Nécrotique: Les attaques de mêlée des ennemis appliquent un chancre cumulable qui inflige des dégâts sur la durée et réduit les soins reçus. ",
+    "affix5" : "Grouillant: Des ennemis normaux supplémentaires sont présents dans tout le donjon. ",
+    "affix6" : "Déchaîné: Les ennemis normaux deviennent enragés à 30% de points de vie, ce qui augmente leurs dégâts de 100% jusqu’à leur mort. ",
+    "affix7" : "Galvanisant: Quand un ennemi normal meurt, son cri d’agonie renforce ses alliés proches, ce qui augmente leur maximum de points de vie et leurs dégâts de 20%. ",
+    "affix8" : "Sanguin: Quand un ennemi normal meurt, il laisse derrière lui une flaque d’ichor qui soigne ses alliés et inflige des dégâts aux personnages-joueurs. ",
+    "affix9" : "Tyrannique: Les boss ont 40% de points de vie supplémentaires et leurs dégâts sont augmentés d’au maximum 15%. ",
+    "affix10" : "Fortifié: Les ennemis normaux ont 20% de points de vie supplémentaires et leurs dégâts sont augmentés d’au maximum 30%. ",
+    "affix11" : "Détonant: Quand un ennemi normal meurt, il explose et inflige aux personnages-joueurs un montant de dégâts égal à 14% de leur maximum de points de vie en 4 secondes. Effet cumulable. ",
+    "affix12" : "Aggravé: Tant que leurs points de vie sont en dessous de 90%, les personnages-joueurs subissent des dégâts sur la durée croissants, jusqu’à ce qu’ils soient soignés au-delà de 90% de leurs points de vie. ",
+    "affix13" : "Explosive: En combat, les ennemis invoquent périodiquement des orbes explosifs qui détonent s’ils ne sont pas détruits. ",
+    "affix14" : "Sismique: Tous les personnages-joueurs émettent régulièrement une onde de choc qui inflige des dégâts aux alliés proches et les interrompt. ",
+    "affix119" : "Envoûtant : Des émissaires d’Azshara sont présents dans tout le donjon.",
+    "helpList": ["Liste des commandes: ",20,30],
+    "helpToken": ["!token: Donne le prix du jeton WoW.",20,50],
+    "helpInfos": ["!infos Nom-Serveur-Region: Donne les stats du joueur",20,70],
+    "helpCompare": ["!compare Nom-Serveur-Region-Nom2-Serveur2-Region2:\nDonne les stats de 2 joueurs.",20,110],
+    "helpAffixes": ["!affixes: Affiche les affixes de la semaine.",20,150],
+    "helpFr": ["!lang fr: Configure le bot en Francais. ",20,170],
+    "helpEn": ["!lang en: Configure le bot en Anglais. ",20,190],
+    "helpMessage": ["Ce bot envoie un message de bienvenue et d'adieu quand\nl'utilisateur rejoint et quitte le serveur.",10,270],
+    "" : ""
+
+    
+}

@@ -1,15 +1,20 @@
-class Translate{
+
+
+class Translate {
     constructor(lang){
-      this.defineLang(lang);
+          this.defineLang(lang);
+      
     }
-  
+    
     defineLang(lang){
-      this.data = require(`path/${lang}.json`);
+      this.data = require(`./${lang}.json`);
     }
-  
+    
     getTrad(string){
       return this.data[string];
     }
+
+    
 }
   
   

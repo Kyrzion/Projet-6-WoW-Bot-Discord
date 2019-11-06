@@ -18,7 +18,7 @@ module.exports = async (client, member) => {
 
     ctx.font = "20px Consolas";
     ctx.fillStyle = "#fff"
-    ctx.fillText("Bienvenue sur le serveur", 40, 110);
+    ctx.fillText("Welcome / Bienvenue", 40, 110);
 
     ctx.font = "40px Consolas";
     ctx.fillStyle = "#fff"

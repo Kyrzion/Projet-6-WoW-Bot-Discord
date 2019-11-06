@@ -1,10 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const request = require('request');
-const General = require('./model/wow_general.js');
 const Enmap = require("enmap");
 const fs = require("fs");
+const Translate = require("./translate.js")
 client.config = config;
 
 //Préfixe utilisé pour les commandes du bot.
@@ -15,6 +14,7 @@ const prefix = config.prefix;
  * @param {char} 
  */
 client.login(config.tokenDiscord);
+global.lang = new Translate('fr');
 
 
 // ---------------------------------------------------------------------------------------------------------------------
