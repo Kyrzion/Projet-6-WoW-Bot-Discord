@@ -22,7 +22,7 @@
     "cookie-parser": ">= 0.0.0",
     "discord.js": "^11.5.1",
     "enmap": "^5.2.1",
-    "express": ">= 0.0.0",
+    "express": ">= 4.17.3",
     "express-session": ">= 0.0.0",
     "fs": "0.0.1-security",
     "passport": ">= 0.0.0",
